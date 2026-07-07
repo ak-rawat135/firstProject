@@ -27,15 +27,6 @@ function handleFormSubmit(event){
         list.remove()
     })
     
-    edit.addEventListener('click',function(){
-        const againName=document.getElementById('username');
-        const againEmail=document.getElementById('email');
-        const againPhone=document.getElementById('phone');
-        againName.value=myObj.Name;
-        againEmail.value=myObj.Email;
-        againPhone.value=myObj.Phone;
-        localStorage.removeItem(myObj.Email);
-        list.remove()
-    })
+
 }
 //module.exports=handleFormSubmit;

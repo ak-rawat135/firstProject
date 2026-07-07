@@ -1,4 +1,4 @@
-// Add input element inside form, before button, to take fruit description
+
 const form=document.querySelector('form')
 const fruits=document.querySelector('.fruits')
 form.addEventListener('submit',function(event){
@@ -11,7 +11,7 @@ form.addEventListener('submit',function(event){
     para.innerHTML=descrip;
     para.style.fontStyle='italic';
 
-    newli.innerHTML=fruitToAdd.value + '<button class="delete-btn">x</button><button class="edit-btn">Edit</button>' ;
+    newli.innerHTML=fruitToAdd.value + '<button class="delete-btn">X</button><button class="edit-btn">Edit</button>' ;
     newli.appendChild(para)
     
     newli.className="fruit"
